@@ -37,6 +37,7 @@
 				uid: '',
 				cid: '',
 				chats: [],
+				newMessage: '',
 			};
 		},
 		
@@ -76,6 +77,15 @@
 			localStorage.setItem(`${this.uid}-${this.cid}-chats`, JSON.stringify(this.chats));
 		},
 		
+		clearChatHistory() 
+		{
+			// 清空聊天记录
+			if (this.chats) 
+			{
+				this.chats = [];
+				this.saveChatToLocalStorage();
+			}
+		},
 	}	
 </script>
 
