@@ -50,13 +50,14 @@
 	}
 
 	.chat-bubble.mine {
-		background-color: orange;
+		background-color: rgb(64, 127, 252);
 		float: right;
+		color: white;
 		/* 让用户发送的气泡靠右 */
 	}
 
 	.chat-bubble.others {
-		background-color: rgb(171 130 255);
+		background-color: rgb(243, 243, 247);
 		float: left;
 		/* 让服务器发送的气泡靠左 */
 	}
